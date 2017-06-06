@@ -3,15 +3,15 @@
 <button><%= link_to 'New article', new_article_path %></button>
 <table id="formtable">
   <tr>
-    <th style="color: deeppink; text-shadow: 2px 2px white; font-size: 48px;">Title</th>
-      <th style="color: deeppink; text-shadow: 2px 2px white; font-size: 48px;">Text</th>
+    <th style="color: deeppink; text-shadow: 2px 2px white; font-size: 48px;">Title <br> &#9830;</th>
+      <th style="color: deeppink; text-shadow: 2px 2px white; font-size: 48px;">Text <br> &#9830;</th>
       <th colspan="2"></th>
     </tr>
  
   <% @articles.each do |article| %>
     <tr>
-      <td><%= article.title %> <br> &#9830;</td> 
-   <td><%= article.text %> <br> &#9830;</td> 
+      <td><%= article.title %> </td> 
+   <td><%= article.text %> </td> 
       <br>
   </tr>
   <br>
