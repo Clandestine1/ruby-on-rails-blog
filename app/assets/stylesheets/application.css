@@ -23,14 +23,11 @@
  	animation-play-state: paused;
  }
 
- #log {
- 	background-color: lightgray;
- }
-
  #joker {
  	position: absolute !important;
  	right: 0% !important;
  	z-index: 24 !important;
+ 	height: 700px;
  }
 
 
@@ -40,8 +37,9 @@ h1 {
 
 #formtable {
  	font-size: 34px;
- 	color: deeppink;
- 	background-color: lightgray;
+ 	color: white;
+ 	text-shadow: deeppink 2px 2px;
+ 	
  }
 
   a {
@@ -50,13 +48,15 @@ h1 {
   }
 
 .comments {
-	background-color: lightgray !important;
+	color: white;
 	width: 20%;
 }
 
 #log {
-	background-color: lightgray !important;
+	background-color: lightgray;
+	color: black;
 	width: 40%;
+	text-shadow: none !important;
 }
 
  button {

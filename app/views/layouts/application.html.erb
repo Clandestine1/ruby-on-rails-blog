@@ -8,7 +8,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body style="color: white; font-weight: bolder;">
+  <body style="color: white; font-weight: bolder; text-shadow: hotpink 1px 1px;">
   <p id="log" class="navbar-text pull-right">
 <% if user_signed_in? %>
   Logged in as <strong><%= current_user.email %></strong>.
@@ -25,6 +25,7 @@
 <% if alert %>
   <p class="alert alert-danger"><%= alert %></p>
 <% end %>
+<img id="joker" src="http://i.imgur.com/dyEPUmu.png" title="source: imgur.com" />
     <%= yield %>
   </body>
 </html>
