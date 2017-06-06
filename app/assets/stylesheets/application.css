@@ -42,6 +42,16 @@ h1 {
  	
  }
 
+ button:hover {
+ 	color: skyblue;
+ 	text-decoration: underline;
+ }
+
+ a:hover {
+ 	color: skyblue;
+ 	text-decoration: underline;
+ }
+
   a {
      text-decoration: none !important;
      color: red !important;
