@@ -18,6 +18,7 @@
   <button><%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %></button>
   <button><%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %></button>
 <% end %>
+<img id="joker" src="http://i.imgur.com/dyEPUmu.png" title="source: imgur.com" />
 </p>
   <% if notice %>
   <p class="alert alert-success"><%= notice %></p>
@@ -25,7 +26,6 @@
 <% if alert %>
   <p class="alert alert-danger"><%= alert %></p>
 <% end %>
-<img id="joker" src="http://i.imgur.com/dyEPUmu.png" title="source: imgur.com" />
     <%= yield %>
   </body>
 </html>
