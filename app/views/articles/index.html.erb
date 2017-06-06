@@ -4,20 +4,20 @@
 <table id="formtable">
   <tr>
     <th style="color: deeppink; text-shadow: 2px 2px white; font-size: 48px;">Title</th>
-    <br>
-    <th style="color: deeppink; text-shadow: 2px 2px white; font-size: 48px;">Text</th>
-    <th colspan="2"></th>
-  </tr>
  
   <% @articles.each do |article| %>
     <tr>
       <td style="display: block"><%= article.title %></td>
-      <br>
+    <br>
+    <th colspan="2"></th>
+  </tr>
+  <br>
+    <th style="color: deeppink; text-shadow: 2px 2px white; font-size: 48px;">Text</th>
       <td style="display: block;"><%= article.text %></td>
       <br>
       <td style="display: block;"><button><%= link_to 'Show', article_path(article) %></button></td>
-      <td><button><%= link_to 'Edit', edit_article_path(article) %></button></td>
-      <td><button><%= link_to 'Destroy', article_path(article),
+      <td style="display: block;"><button><%= link_to 'Edit', edit_article_path(article) %></button></td>
+      <td style="display: block;"><button><%= link_to 'Destroy', article_path(article),
               method: :delete,
               data: { confirm: 'Are you sure?' } %></button></td>
     </tr>
