@@ -4,27 +4,26 @@
 <table id="formtable">
   <tr>
     <th style="color: deeppink; text-shadow: 2px 2px white; font-size: 48px;">Title</th>
-      <th style="color: deeppink; text-shadow: 2px 2px white; font-size: 48px; display: block;">Text</th>
+      <th style="color: deeppink; text-shadow: 2px 2px white; font-size: 48px;">Text</th>
+      <th colspan="2"></th>
     </tr>
-    <th colspan="2"></th>
  
   <% @articles.each do |article| %>
     <tr>
-      <td style="display: block"><%= article.title %></td>
-   <td style="display: block;"><%= article.text %></td>
+      <td><%= article.title %></td>
+   <td><%= article.text %></td>
       <br>
   </tr>
   <br>
     <tr>
-    <td style="display: block; margin-top: 4%;"><button><%= link_to 'Show', article_path(article) %></button></td>
-      <td style="display: block; margin-top: 4%;"><button><%= link_to 'Edit', edit_article_path(article) %></button></td>
-      <td style="display: block; margin-top: 4%;"><button><%= link_to 'Destroy', article_path(article),
+    <td><button><%= link_to 'Show', article_path(article) %></button></td>
+      <td><button><%= link_to 'Edit', edit_article_path(article) %></button></td>
+      <td><button><%= link_to 'Destroy', article_path(article),
               method: :delete,
               data: { confirm: 'Are you sure?' } %></button></td>
     </tr>
-
-    <img id="joker" src="http://i.imgur.com/dyEPUmu.png" title="source: imgur.com" />
-
+<img id="joker" src="http://i.imgur.com/dyEPUmu.png" title="source: imgur.com" />
   
   <% end %>
+
   </table>
