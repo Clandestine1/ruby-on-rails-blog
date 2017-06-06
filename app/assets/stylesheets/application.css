@@ -1,0 +1,72 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ body {
+ 	background-image: url(http://i.imgur.com/4eHtJPc.jpg);
+ 	animation: shauna 14s infinite linear;
+ }
+
+ body:hover {
+ 	animation-play-state: paused;
+ }
+
+ #log {
+ 	background-color: lightgray;
+ }
+
+
+h1 {
+ 	color: black;
+ }
+
+#formtable {
+ 	font-size: 34px;
+ 	color: deeppink;
+ 	background-color: lightgray;
+ }
+
+  a {
+     text-decoration: none !important;
+     color: red !important;
+  }
+
+.comments {
+	background-color: lightgray !important;
+	width: 20%;
+}
+
+#log {
+	background-color: lightgray !important;
+	width: 40%;
+}
+
+ button {
+ 	border: none;
+ 	background-color: lightgray;
+ 	font-weight: bolder;
+ 	font-size: 14px;
+ }
+
+ @keyframes shauna {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(0.9);
+  }
+  100%{
+    transform: scale(1.0);
+  }
+}
